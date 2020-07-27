@@ -2,10 +2,11 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 const User = () => {
-  const { name } = useParams()
+  const { fname, lname } = useParams()
+  
   return (
     <div>
-      User { name }
+      User { fname } { lname }
     </div>
   )
 }
